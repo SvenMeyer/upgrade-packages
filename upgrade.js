@@ -8,9 +8,9 @@
  */
 
 const { exec } = require('child_process');
+const { execSync } = require('child_process');
 const { promisify } = require('util');
 const fs = require('fs');
-const { execSync } = require('child_process');
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
